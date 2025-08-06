@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "me.haedal.custom_displayname.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "ChatMixin",
+    "TablistMixin",
+    "NametagMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

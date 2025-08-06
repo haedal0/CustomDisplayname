@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "custom_displayname",
+  "version": "${version}",
+  "name": "Custom Displayname",
+  "description": "Change the name to anything you like!",
+  "authors": [
+    "haedal"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/custom_displayname/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.haedal.custom_displayname.fabric.CustomDisplaynameFabric"
+    ],
+    "client": [
+      "me.haedal.custom_displayname.fabric.client.CustomDisplaynameFabricClient"
+    ],
+    "modmenu": [
+      "me.haedal.custom_displayname.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "custom_displayname.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*",
+    "modmenu": "*",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
