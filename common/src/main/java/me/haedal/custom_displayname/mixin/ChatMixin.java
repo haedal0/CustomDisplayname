@@ -1,6 +1,6 @@
 package me.haedal.custom_displayname.mixin;
 
-import me.haedal.custom_displayname.ConfigUtil;
+import me.haedal.custom_displayname.util.ConfigUtil;
 import me.haedal.custom_displayname.util.ChatModifier;
 import net.minecraft.client.gui.components.ChatComponent;
 import net.minecraft.network.chat.Component;
