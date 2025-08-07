@@ -1,6 +1,6 @@
 package me.haedal.custom_displayname.fabric.client;
 
-import me.haedal.custom_displayname.ConfigUtil;
+import me.haedal.custom_displayname.util.ConfigUtil;
 import me.haedal.custom_displayname.fabric.FabricConfigProvider;
 import me.haedal.custom_displayname.fabric.ModConfig;
 import me.shedaniel.autoconfig.AutoConfig;

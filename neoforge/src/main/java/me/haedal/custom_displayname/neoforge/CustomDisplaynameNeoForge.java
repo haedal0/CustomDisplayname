@@ -1,6 +1,6 @@
 package me.haedal.custom_displayname.neoforge;
 
-import me.haedal.custom_displayname.ConfigUtil;
+import me.haedal.custom_displayname.util.ConfigUtil;
 import me.haedal.custom_displayname.CustomDisplayname;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
