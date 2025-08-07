@@ -18,6 +18,8 @@ public class ChatModifier {
     private static MutableComponent findAndReplaceInSingleComponent(Component component, String targetStr, Component replacement) {
         String text = component.getString();
 
+        CustomDisplayname.LOGGER.info("Replacing " + text);
+
         if (!text.contains(targetStr)) {
             return component.copy();
         }
@@ -28,17 +30,7 @@ public class ChatModifier {
 
         MutableComponent newComponent = Component.literal("");
 
-        String[] parts = text.split(targetStr);
-
-        for (int i = 0; i < parts.length; i++) {
-            if (!parts[i].isEmpty()) {
-                newComponent.append(Component.literal(parts[i]).withStyle(component.getStyle()));
-            }
-
-            if (i < parts.length - 1) {
-                newComponent.append(replacement.copy().withStyle(component.getStyle()));
-            }
-        }
+        newComponent.append(text.replace(targetStr, replacement.getString())).withStyle(component.getStyle());
 
         return newComponent;
     }
