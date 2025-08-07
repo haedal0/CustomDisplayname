@@ -1,12 +1,10 @@
 package me.haedal.custom_displayname.mixin;
 
-import me.haedal.custom_displayname.ConfigUtil;
+import me.haedal.custom_displayname.util.ConfigUtil;
 import me.haedal.custom_displayname.util.ChatModifier;
 import net.minecraft.client.gui.components.PlayerTabOverlay;
-import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.world.scores.PlayerTeam;
 import org.apache.commons.lang3.tuple.Pair;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

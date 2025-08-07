@@ -1,6 +1,4 @@
-package me.haedal.custom_displayname;
-
-import me.haedal.custom_displayname.util.ConfigProvider;
+package me.haedal.custom_displayname.util;
 
 public final class ConfigUtil {
     private static ConfigProvider provider;
